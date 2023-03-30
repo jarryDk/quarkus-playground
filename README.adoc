@@ -1,0 +1,30 @@
+= Quarkus Playground
+
+- https://quarkus.io/guides
+- https://quarkus.io/get-started/
+
+.Create a Quarkus with no code (default project setup)
+[source,bash]
+----
+mvn io.quarkus:quarkus-maven-plugin:3.0.0.Beta1:create \
+    -DprojectGroupId=dk.jarry.quarkus.playground \
+    -DprojectArtifactId=picoli-demo \
+    -DnoCode=true
+----
+
+https://quarkus.io/guides/quarkus-maven-plugin#quarkus-maven-plugin-goal-create-nocode
+
+== Picocli
+
+.Create a Quarkus with no code, but the picocli extension
+[source,bash]
+----
+mvn io.quarkus:quarkus-maven-plugin:3.0.0.Beta1:create \
+    -DprojectGroupId=dk.jarry.quarkus.playground \
+    -DprojectArtifactId=picoli-demo \
+    -Dextensions="io.quarkus:quarkus-picocli" \
+    -DnoCode=true
+----
+
+- https://quarkus.io/extensions/io.quarkus/quarkus-picocli
+- https://quarkus.io/guides/picocli
